@@ -1,0 +1,27 @@
+.st3{
+ fill: #cc2525;
+}
+
+.cls-3{
+    display: block;
+}
+
+.cls-4:hover > .cls-3{
+ fill: #050505;
+   
+}
+.cls-3:hover{
+    display: none;
+}
+
+# achterlaag {
+    overflow: hidden;
+    width: 1000px.
+}
+
+#Driehoekje{
+    width: 200px;
+}
+h1{
+    color: aqua;
+}
