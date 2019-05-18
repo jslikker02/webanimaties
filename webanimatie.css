@@ -1,27 +1,100 @@
-.st3{
+body{
+    background-color: #6A5244;
+}
+#gezicht{
+
  fill: #cc2525;
 }
 
-.cls-3{
+.class{
     display: block;
 }
 
-.cls-4:hover > .cls-3{
- fill: #050505;
-   
+#brein{
+    opacity: 0;
+    fill: #EADED1;
 }
+#driehoekje{
+    fill: #EADED1;
+}
+
+#bout{
+   fill: #cc2525;
+}
+
+#bout1{
+ fill: #cc2525;
+    }
+#bol1{
+    fill:#6A5244;
+}
+#bol3{
+    fill:#6A5244;
+}
+
+#ballon{
+    fill:#6A5244;
+}
+
+#wolkje{
+    fill:#6A5244;
+}
+
+
+.snoepje {
+ animation: draaien 2s infinite linear;
+  fill: black;
+}
+.snoepje2 {
+ animation: draaien2 2s infinite linear;
+fill: black;
+}
+
+.gezichtkleur{
+fill: #EADED1;
+}
+
+.breinverschijn{
+     opacity: 1;
+}
+
 .cls-3:hover{
     display: none;
 }
 
-# achterlaag {
+#achterlaag {
     overflow: hidden;
-    width: 1000px.
+         opacity: 0%;
 }
 
-#Driehoekje{
+#driehoekje{
     width: 200px;
 }
-h1{
-    color: aqua;
+
+
+@keyframes draaien {
+ 0% {
+		transform: rotate(0deg);
+     transform-origin: 51% 21% 
+         ;
+	}
+	100% {
+		transform: rotate(360deg);
+         transform-origin: 51% 21% 
+             ;
+       
+	}
+}
+@keyframes draaien2 {
+ 0% {
+		transform: rotate(0deg);
+     transform-origin: 56% 24% 
+         ;
+	}
+	100% {
+		transform: rotate(360deg);
+         transform-origin: 56% 24% 
+             ;
+       
+	}
 }
