@@ -28,9 +28,9 @@ h1{
  fill: #cc2525;
 }
 section{
-  top:52%;
-    left: 16%;
-  height: 8em;
+  top:54%;
+    left: 35%;
+  height: 7em;
   width: 3em;
   background-color: #6A5244;
   border-radius: 50%;
@@ -38,18 +38,20 @@ section{
   position: absolute;
   z-index: 1;
   opacity: 0;
+ transform: rotate(-15deg);
 }
 .section2{
   top:52%;
-    left: 21.5%;
-  height: 8em;
+    left: 39%;
+  height: 7em;
   width: 3em;
-  background-color: #6A5244;
+  background-color: black;
   border-radius: 50%;
   display: inline-block;
   position: absolute;
   z-index: 1;
   opacity: 0;
+    transform: rotate(-21deg);
 }
 img{
     width: 10em;
@@ -197,6 +199,16 @@ fill: grey;
 		opacity: 1;
 	}
 }
+
+.hapnemen{
+    width: 10em;
+    margin-left: 33%;
+    margin-top: -30%;
+    transform:rotate(-15deg);
+    transition-duration: 1s;
+    
+}
+
 .haphap{
 animation: eten;
     animation-duration: 2.5s;

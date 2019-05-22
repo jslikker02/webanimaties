@@ -64,6 +64,7 @@ function voedsel(e){
 document.addEventListener('keydown',voedsel);
 }
 function voederen() {
+ appel.classList.add("hapnemen");    
  driehoek.classList.add("haphap");
  schil1.classList.add("haphap2");
  schil2.classList.add("haphap3");
