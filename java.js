@@ -15,6 +15,8 @@ var h1  = document.querySelector('h1');
 var driehoek = document.querySelector('.st22');
 var schil1  = document.querySelector('section');
 var schil2 = document.querySelector('.section2');
+var body = document.querySelector('body');
+var div = document.querySelector('div');
 
 //var druk2 = document.querySelector('#boutje2');
 //var druk2 = document.querySelector('#boutje2');
@@ -57,6 +59,7 @@ function voedsel(e){
     var keycode = e.keyCode;
     if(keycode == 69){
         appel.classList.add('hallo');
+        div.classList.add('plop');
        
     }
     e.preventDefault;
@@ -71,3 +74,12 @@ function voederen() {
 }
 
 appel.addEventListener("click", voederen);
+
+//function klikkie (){
+//    body.classList.add("body2");
+//      bol1.classList.add("verschijn11");
+//    bol2.classList.add("verschijn21");
+//    bol3.classList.add("verschijn31");
+//    wolkje.classList.add("verschijn41");
+//}
+//body.addEventListener("click", klikkie);
