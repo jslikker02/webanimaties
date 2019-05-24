@@ -441,23 +441,27 @@ opacity: 1;
 }
 @media screen and (max-width: 25em){
       html {
-           width: 100%;
-          overflow:hidden;
-          max-width: 100%;
+           width: 120%;
+         overflow: hidden;
+          max-width: 120%;
           
 }
+    
+    header{
+       display: none;
+    }
    svg{
        width: 60em;
        margin-left: -60%;
-        overflow: hidden;
                         }                       
     h1{
-   font-size: 4em;
-    position: fixed;
-    left: 6%;
-    top: 10%;
+   font-size: 5em;
+    position: absolute;
+    left: 7%;
+    top: 35%;
 
-    }   .schilderij1{
+    }
+ .schilderij1{
 display: none;
        
     }                      
@@ -469,10 +473,24 @@ display: none;
    display: none;
 }
 
+?
 #wolkje{
 display: none;
-     }    }
+     }   
+.appelballon{
+    width: 5em;
+    margin-left: 58%;
+    margin-top: -125%;
+    opacity: 0;
+    position: absolute;
+    transition-delay: 2s;
+}
+.denkappel{
+   transition-delay: 1.2s; 
+    opacity: 1;
+}
 
+}
 
 #persoon1{
     position: absolute;
@@ -480,6 +498,8 @@ display: none;
         top:20%;
     
 }
+  
+
 
 
 
