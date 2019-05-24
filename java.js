@@ -1,5 +1,5 @@
 console.log("hallo");
-
+//Op weg geholpen door Joop
 var peop = document.querySelector('.st1');
 var druk = document.querySelector('#boutje1');
 var druk2 = document.querySelector('#boutje2');
@@ -106,7 +106,8 @@ function voederen() {
 
 appel.addEventListener("click", voederen);
 
-
+//https://keycode.info/
+//https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/keyCode
 function opschonen(e){
     var keycode = e.keyCode;
     if(keycode == 8){
