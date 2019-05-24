@@ -17,10 +17,31 @@ var schil1  = document.querySelector('section');
 var schil2 = document.querySelector('.section2');
 var body = document.querySelector('body');
 var div = document.querySelector('div');
+var muur = document.querySelector('header');
+var schilderij = document.querySelector('.schilderij');
+var schilderij1 = document.querySelector('.schilderij1');
+var h2 = document.querySelector('h2');
+var h3 = document.querySelector('h3');
+var h4 = document.querySelector('h4');
+var button = document.querySelector('.button1');
+var button2 = document.querySelector('.button2');
+var persoon = document.querySelector('#persoon1');
+
+
+
+
 
 //var druk2 = document.querySelector('#boutje2');
 //var druk2 = document.querySelector('#boutje2');
 
+function begin(){
+         muur.classList.add("doei");
+    schilderij.classList.add("doei");
+    schilderij1.classList.add("schilderij11");
+
+}{
+button.addEventListener('click',begin);
+}
 
 function sickoMode() {
     druk.classList.add("snoepje2");
@@ -36,6 +57,14 @@ function sickoMode() {
     h1.innerHTML = "hmmmmm...";
     
 
+}
+
+function begin2(){
+ persoon.classList.add("lopen");
+
+}
+{
+button2.addEventListener('click',begin2);
 }
 
 function sickoModeOff() {
@@ -71,10 +100,30 @@ function voederen() {
  driehoek.classList.add("haphap");
  schil1.classList.add("haphap2");
  schil2.classList.add("haphap3");
+    h1.innerHTML = "delicious";
 }
 
 appel.addEventListener("click", voederen);
 
+
+function opschonen(e){
+    var keycode = e.keyCode;
+    if(keycode == 8){
+        appel.classList.remove("hapnemen");    
+ driehoek.classList.remove("haphap");
+ schil1.classList.remove("haphap2");
+ schil2.classList.remove("haphap3");
+   appel.classList.remove('hallo');
+   h3.classList.add('zichtbaar');
+   h4.classList.add('zichtbaar');
+        h1.innerHTML = "Search for more";
+         h2.classList.add("h2");
+    }
+    e.preventDefault;
+}
+{
+document.addEventListener('keydown',opschonen);
+}
 //function klikkie (){
 //    body.classList.add("body2");
 //      bol1.classList.add("verschijn11");
