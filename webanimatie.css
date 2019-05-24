@@ -12,6 +12,10 @@ body{
     overflow: hidden;
 
 }
+
+
+}
+  
 .body2{
     background-color: red;
 }
@@ -24,7 +28,7 @@ body{
     background-color: red;
     color: white;
     position: absolute;
-    top:20%;
+    top:50%;
     left: 3%;
 
 }
@@ -36,8 +40,9 @@ body{
     background-color: darkblue;
     color: white;
     position: absolute;
-    top:30%;
-    left: 3%;
+    top:50%;
+    left: 69%;
+    z-index: 1;
 
 }
 h1{
@@ -100,6 +105,9 @@ header{
 h1:hover{
     color: hotpink;
 }
+#zwartelaag{
+    fill: black;
+}
 #zwartelaag :hover{
     fill: white;
 }
@@ -107,7 +115,7 @@ h1:hover{
 
  fill: #cc2525;
 }
-section{
+.section1{
   top:54%;
     left: 35%;
   height: 7em;
@@ -131,8 +139,27 @@ section{
   position: absolute;
   z-index: 1;
   opacity: 0;
+  transform: rotate(-21deg);
+}
+.section3 {
+    top: 52%;
+    left: 40%;
+    height: 60em;
+    width: 50em;
+    background-color: yellow;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
     transform: rotate(-21deg);
 }
+.section3aan {
+animation: plop2;
+animation-duration: .5s;
+    animation-delay: 3s;
+}
+
+
 .schilderij{
     width: 30em;
     opacity: 1;
@@ -337,6 +364,21 @@ fill: grey;
 	}
 }
 
+@keyframes plop2 {
+ 0% {
+		opacity: 0;
+         
+	}
+    50% {
+	opacity: 1;
+ transform: scale(1.9);
+    
+	}
+	100% {
+	opacity: 0;
+    
+	}
+}
 .hallo{
     opacity: 1;
 }
@@ -394,12 +436,52 @@ opacity: 1;
 }
 .lopen{
   animation: lopen 6s;
+    
+    z-index: 2;
 }
+@media screen and (max-width: 25em){
+      html {
+           width: 100%;
+          overflow:hidden;
+          max-width: 100%;
+          
+}
+   svg{
+       width: 60em;
+       margin-left: -60%;
+        overflow: hidden;
+                        }                       
+    h1{
+   font-size: 4em;
+    position: fixed;
+    left: 6%;
+    top: 10%;
+
+    }   .schilderij1{
+display: none;
+       
+    }                      
+    #bol2{
+    display: none;
+}
+
+#bol3{
+   display: none;
+}
+
+#wolkje{
+display: none;
+     }    }
+
+
 #persoon1{
     position: absolute;
     left: 70%;
         top:20%;
+    
 }
+
+
 
 @keyframes lopen{
     20%{
@@ -415,11 +497,8 @@ opacity: 1;
         
     100%{
         left:30%;
-      
+         }
  
-}
-@keyframes foto{
-    50%{
-        left:60%;
-        
-    }}
+    }
+
+ 

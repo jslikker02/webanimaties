@@ -13,7 +13,7 @@ var appelballon = document.querySelector('.appelballon');
 var paragraph = document.querySelector('p');
 var h1  = document.querySelector('h1');
 var driehoek = document.querySelector('.st22');
-var schil1  = document.querySelector('section');
+var schil1  = document.querySelector('.section1');
 var schil2 = document.querySelector('.section2');
 var body = document.querySelector('body');
 var div = document.querySelector('div');
@@ -26,6 +26,7 @@ var h4 = document.querySelector('h4');
 var button = document.querySelector('.button1');
 var button2 = document.querySelector('.button2');
 var persoon = document.querySelector('#persoon1');
+var flits = document.querySelector('.section3');
 
 
 
@@ -61,7 +62,7 @@ function sickoMode() {
 
 function begin2(){
  persoon.classList.add("lopen");
-
+ flits.classList.add("section3aan")
 }
 {
 button2.addEventListener('click',begin2);
